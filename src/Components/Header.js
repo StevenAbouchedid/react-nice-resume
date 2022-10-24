@@ -13,7 +13,7 @@ class Header extends Component {
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="cobweb" color="ffffff" bg={true} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -62,17 +62,17 @@ class Header extends Component {
               <h1 className="responsive-headline">{name}</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              {/* <h3>{description}.</h3> */}
             </Fade>
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
                 <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
+                  <i className="fa fa-pencil"></i>Register Now
                 </a>
-                <a href={github} className="button btn github-btn">
+                {/* <a href={github} className="button btn github-btn">
                   <i className="fa fa-github"></i>Github
-                </a>
+                </a> */}
               </ul>
             </Fade>
           </div>
